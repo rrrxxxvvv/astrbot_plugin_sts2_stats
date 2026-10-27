@@ -1,0 +1,74 @@
+{
+  "sts2_enabled": {
+    "description": "启用尖塔查询模块",
+    "hint": "关闭后停用本插件全部指令。",
+    "type": "bool",
+    "default": true
+  },
+  "sts2_api_base": {
+    "description": "Spire Codex API 根地址",
+    "hint": "默认 https://spire-codex.com/api，可改为自建镜像或反代地址。",
+    "type": "string",
+    "default": "https://spire-codex.com/api"
+  },
+  "sts2_lang": {
+    "description": "数据语言",
+    "hint": "默认 zhs（简体中文）。",
+    "type": "string",
+    "default": "zhs"
+  },
+  "sts2_request_timeout": {
+    "description": "请求超时（秒）",
+    "hint": "单次请求 Spire Codex 的超时时间。",
+    "type": "int",
+    "default": 15
+  },
+  "sts2_rate_limit_per_min": {
+    "description": "本地请求限速（每分钟）",
+    "hint": "本插件本地限速，默认每分钟 50 次请求；请遵守数据源服务规则。",
+    "type": "int",
+    "default": 50
+  },
+  "sts2_cache_ttl_hours": {
+    "description": "数据缓存时间（小时）",
+    "hint": "全量数据本地缓存刷新周期，默认 120 小时。",
+    "type": "int",
+    "default": 120
+  },
+  "sts2_select_timeout_sec": {
+    "description": "列表选择超时（秒）",
+    "hint": "发送 /选择 <序号> 的有效时间，默认 30 秒。",
+    "type": "int",
+    "default": 30
+  },
+  "sts2_max_list_results": {
+    "description": "列表图最大条数",
+    "hint": "多结果命中时列表图最多显示多少条，默认 10。",
+    "type": "int",
+    "default": 10
+  },
+  "sts2_default_ascension": {
+    "description": "胜率查询默认进阶等级",
+    "hint": "用于 /尖塔胜率 以及详情图中的社区胜率，默认 A10。",
+    "type": "int",
+    "default": 10
+  },
+  "sts2_power_table_limit": {
+    "description": "从夯到拉表展示条数",
+    "hint": "/从夯到拉 每张图展示多少张卡，默认 120，足够覆盖大部分全量卡池。",
+    "type": "int",
+    "default": 120
+  },
+  "sts2_power_table_min_picks": {
+    "description": "从夯到拉最小样本数",
+    "hint": "过滤样本太少的卡牌，默认至少 100 次 picks。",
+    "type": "int",
+    "default": 100
+  },
+  "cjk_font_path": {
+    "description": "中文字体路径",
+    "hint": "可选，填写 .ttf/.ttc/.otf 的绝对路径；未填写时自动寻找系统中文字体。",
+    "type": "string",
+    "default": ""
+  }
+}

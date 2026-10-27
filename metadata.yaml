@@ -1,0 +1,6 @@
+name: astrbot_plugin_sts2_stats
+display_name: 尖塔统计
+desc: 杀戮尖塔2图鉴、卡牌与遗物社区胜率、角色及先古遗物排行，支持批量查询和图片展示。
+version: v1.0.0
+author: rrrxxxvvv
+repo: https://github.com/rrrxxxvvv/astrbot_plugin_sts2_stats
